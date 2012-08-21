@@ -1,0 +1,171 @@
+/*color*/
+/*font*/
+/*background color*/
+/*link*/
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+img,
+th,
+td,
+form,
+fieldset,
+iframe,
+object,
+pre,
+code,
+legend,
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+table {
+  border-collapse: separate;
+}
+caption,
+th,
+td {
+  /*text-align:left; */
+
+  font-weight: normal;
+}
+body {
+  font-size: 12px;
+  font-family: 'tahoma,arial,\5b8b\4f53,sans-serif';
+  color: #000000;
+  line-height: 18px;
+  background-color: #ffffff;
+  word-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+}
+a {
+  color: #6666cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+  background-color: #6666cc;
+}
+a.img:hover {
+  background: transparent;
+}
+a img {
+  border: none;
+}
+a:hover img {
+  background-color: transparent;
+}
+a.color-r:hover,
+a.color-rw:hover {
+  text-underline: underline;
+  color: #ff0066;
+}
+a.color-rw:hover {
+  text-decoration: underline;
+}
+.main_w,
+.section_w {
+  zoom: 1;
+  margin: 0, auto, 0;
+  display: block;
+  width: 960px;
+  position: relative;
+  z-index: 2;
+}
+.pgm {
+  padding-top: 10px;
+  position: relative;
+  min-height: 190px;
+  _height: 190px;
+  zoom: 1;
+  z-index: 2;
+}
+/* hacked for position:relative bug - ie6 & ie7*/
+.content {
+  z-index: 20;
+  float: left;
+  width: 710px;
+}
+.sidebar {
+  z-index: 10;
+  float: right;
+  width: 230px;
+  overflow: hidden;
+}
+.Tabs-page .sidebar {
+  padding-top: 33px;
+}
+.Fix {
+  zoom: 1;
+}
+.Fix:after {
+  display: block;
+  content: '\20';
+  height: 0;
+  clear: both;
+}
+.color-r {
+  color: #cc0000 !important;
+}
+.color-o {
+  color: #ff6600 !important;
+}
+.color-b {
+  color: #00aaff !important;
+}
+.color-gray {
+  color: #666666 !important;
+}
+.color-grn {
+  color: #333399 !important;
+}
+.color-y {
+  color: #ff8800 !important;
+}
+.color-rw {
+  color: #cc0000 !important;
+}

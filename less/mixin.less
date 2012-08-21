@@ -1,4 +1,26 @@
 .center(@top: 0, @bottom: 0){
-    margin: @top, auto,@bottom;
+    margin: @top auto @bottom;
     display: block;
+}
+
+.left(){
+    float: left;
+}
+
+.right(){
+    float: right;
+}
+
+.color(@color){
+    color: @color !important;
+}
+
+.clear(){
+    zoom: 1;
+    &:after {
+        display: block;
+        content: '\20';
+        height: 0;
+        clear: both;
+    }
 }

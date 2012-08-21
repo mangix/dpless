@@ -30,11 +30,16 @@ caption, th, td {
 
 body {
     font-size: @baseFontSize;
+    font-family: '@{baseFontFamily}';
     color: @baseFontColor;
-    font-family: @baseFontFamily;
     line-height: @baseLineHeight;
-    background-color: @baseBackgroundColor;
+    background-color: @baseBGColor;
     word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: @baseFontSize+2;
+    line-height: @baseLineHeight+2;
 }
 
 a {
@@ -44,7 +49,7 @@ a {
 
 a:hover {
     color: @baseLinkHoverColor;
-    background-color: @baseLinkHoverBackgroundColor;
+    background-color: @baseLinkHoverBGColor;
 }
 
 a.img:hover {
@@ -58,3 +63,13 @@ a img {
 a:hover img {
     background-color: transparent;
 }
+
+a.color-r:hover, a.color-rw:hover {
+    text-decoration: underline;
+    color: @lightred;
+}
+
+a.color-rw:hover {
+    text-decoration: underline;
+}
+
