@@ -1,0 +1,80 @@
+.Zero {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+}
+
+.Disable {
+    cursor: default;
+    color: @lightgray;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a.Disable:hover {
+    cursor: default;
+    text-decoration: none;
+    color: @lightgray;
+}
+
+.Right {
+    float: right !important;
+}
+
+.Left {
+    float: left !important;
+}
+
+.Hide {
+    display: none !important;
+}
+
+.Clear {
+    clear: both;
+}
+
+.Readonly {
+    background-color: @white+#111;
+    color: @gray;
+}
+
+.Fix {
+}
+
+/* 这里仅仅是一个占位的作用，意在表明 .Fix是一个组件类（它的作用是清除浮动） */
+/* 由于设计的要求，团购使用了tahoma作为默认字体，但是tahoma的￥只有一横，这里为了设计要求，将这个符号的字体设置为arial以解决这个问题 */
+.Price-font {
+    font-family: @priceFamily !important;
+}
+
+.Noflow {
+    overflow: hidden;
+}
+
+#bottom{
+    .bx(@value) when @value<=40{
+        .b-@{value}{
+            margin-bottom:@value;
+        }
+        .bx(@value*2);
+    }
+}
+
+.b-40 {
+    margin-bottom: 40px;
+}
+
+.b-20 {
+    margin-bottom: 20px;
+}
+
+.b-10 {
+    margin-bottom: 10px;
+}
+
+.b-5 {
+    margin-bottom: 5px;
+}
