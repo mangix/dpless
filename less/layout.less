@@ -1,0 +1,34 @@
+.main_w, .section_w {
+    zoom: 1;
+    .center();
+    width: 960px;
+    position: relative;
+    z-index: 2;
+}
+
+.pgm {
+    padding-top: 10px;
+    position: relative;
+    min-height: 190px;
+    _height: 190px;
+    zoom: 1;
+    z-index: 2;
+}
+
+/* hacked for position:relative bug - ie6 & ie7*/
+.content {
+    z-index: 20;
+    float: left;
+    width: 710px;
+}
+
+.sidebar {
+    z-index: 10;
+    float: right;
+    width: 230px;
+    overflow: hidden;
+}
+
+.Tabs-page .sidebar {
+    padding-top: 33px;
+}

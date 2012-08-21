@@ -1,0 +1,60 @@
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, a, img, th, td, form, fieldset, iframe, object, pre, code, legend, blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+input, button, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+table {
+    border-collapse: separate;
+}
+
+caption, th, td {
+/*text-align:left; */
+    font-weight: normal
+}
+
+body {
+    font-size: @baseFontSize;
+    color: @baseFontColor;
+    font-family: @baseFontFamily;
+    line-height: @baseLineHeight;
+    background-color: @baseBackgroundColor;
+    word-wrap: break-word;
+}
+
+a {
+    color: @baseLinkColor;
+    text-decoration: none;
+}
+
+a:hover {
+    color: @baseLinkHoverColor;
+    background-color: @baseLinkHoverBackgroundColor;
+}
+
+a.img:hover {
+    background: transparent;
+}
+
+a img {
+    border: none;
+}
+
+a:hover img {
+    background-color: transparent;
+}
