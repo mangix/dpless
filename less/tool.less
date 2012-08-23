@@ -54,27 +54,27 @@ a.Disable:hover {
     overflow: hidden;
 }
 
-#bottom{
-    .bx(@value) when @value<=40{
-        .b-@{value}{
-            margin-bottom:@value;
+#bottom {
+    .core (@gridColumnWidth, @gridGutterWidth) {
+
+        .spanX (@index) when (@index > 0) {
+            (~".span@{index}") { zoom:1; }
+            .spanX(@index - 1);
         }
-        .bx(@value*2);
+        .spanX (0) {}
+
+        .spanX (10);
+
+    }
+
+    .btm (@min,@max){
+
+        .bottmx (@value) when (@value < @max) {
+            (~".bnnn@{value}") { margin-bottom:10px; }
+            .bottmx(40);
+        }
+
+        .bottmx (@min);
     }
 }
-
-.b-40 {
-    margin-bottom: 40px;
-}
-
-.b-20 {
-    margin-bottom: 20px;
-}
-
-.b-10 {
-    margin-bottom: 10px;
-}
-
-.b-5 {
-    margin-bottom: 5px;
-}
+#bottom > .btm (5,40);

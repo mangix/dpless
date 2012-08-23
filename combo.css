@@ -101,16 +101,16 @@ a:hover img {
 }
 a.color-r:hover,
 a.color-rw:hover {
-  text-underline: underline;
+  text-decoration: underline;
   color: #ff0066;
 }
 a.color-rw:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 .main_w,
 .section_w {
   zoom: 1;
-  margin: 0, auto, 0;
+  margin: 0 auto 0;
   display: block;
   width: 960px;
   position: relative;
@@ -168,4 +168,51 @@ a.color-rw:hover {
 }
 .color-rw {
   color: #cc0000 !important;
+  font-weight: bold;
+}
+.Zero {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  visibility: hidden !important;
+  overflow: hidden !important;
+}
+.Disable {
+  cursor: default;
+  color: #999999;
+}
+.Disable:hover {
+  text-decoration: none;
+}
+a.Disable:hover {
+  cursor: default;
+  text-decoration: none;
+  color: #999999;
+}
+.Right {
+  float: right !important;
+}
+.Left {
+  float: left !important;
+}
+.Hide {
+  display: none !important;
+}
+.Clear {
+  clear: both;
+}
+.Readonly {
+  background-color: #ffffff;
+  color: #666666;
+}
+/* 这里仅仅是一个占位的作用，意在表明 .Fix是一个组件类（它的作用是清除浮动） */
+/* 由于设计的要求，团购使用了tahoma作为默认字体，但是tahoma的￥只有一横，这里为了设计要求，将这个符号的字体设置为arial以解决这个问题 */
+.Price-font {
+  font-family: 'Helvetica, arial, sans-serif' !important;
+}
+.Noflow {
+  overflow: hidden;
+}
+.bnnn5 {
+  margin-bottom: 10px;
 }
